@@ -33,7 +33,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center group">
             <img
-              src="/logo-full.png"
+              src={`${import.meta.env.BASE_URL}logo-full.png`}
               alt="TalkLess"
               className="h-10 w-auto group-hover:scale-105 transition-transform duration-300"
             />

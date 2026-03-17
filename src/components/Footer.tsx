@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center mb-6 group">
               <img
-                src="/logo-stacked.png"
+                src={`${import.meta.env.BASE_URL}logo-stacked.png`}
                 alt="TalkLess"
                 className="h-20 w-auto group-hover:scale-105 transition-transform duration-300"
               />

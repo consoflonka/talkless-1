@@ -215,7 +215,7 @@ const Hero = () => {
                 <div className="text-center relative z-10">
                   <div className="relative mb-6">
                     <img
-                      src="/logo-stacked.png"
+                      src={`${import.meta.env.BASE_URL}logo-stacked.png`}
                       alt="TalkLess"
                       className="h-40 w-auto mx-auto group-hover:scale-110 transition-all duration-500 drop-shadow-2xl"
                     />
