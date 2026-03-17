@@ -31,12 +31,15 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center group">
+          <div className="flex items-center space-x-3 group">
             <img
-              src={`${import.meta.env.BASE_URL}logo-full.png`}
-              alt="TalkLess"
-              className="h-10 w-auto group-hover:scale-105 transition-transform duration-300"
+              src={`${import.meta.env.BASE_URL}logo-icon.png`}
+              alt="TalkLess Icon"
+              className="h-10 w-auto drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
             />
+            <span className="text-2xl font-extrabold tracking-tight text-white group-hover:text-brand-400 transition-colors duration-300">
+              TALKLESS
+            </span>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
