@@ -16,17 +16,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-6 group">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-brand-500 to-purple-500 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-                <div className="relative w-12 h-12 bg-gradient-to-br from-brand-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
-                  <svg viewBox="0 0 24 24" className="w-7 h-7 text-white">
-                    <path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                    <polygon points="14,2 14,10 22,6" fill="currentColor" opacity="0.8"/>
-                  </svg>
-                </div>
-              </div>
-              <span className="text-3xl font-bold">TalkLess</span>
+            <div className="flex items-center mb-6 group">
+              <img
+                src="/logo-full.png"
+                alt="TalkLess"
+                className="h-12 w-auto group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <p className="text-gray-300 mb-8 max-w-md leading-relaxed text-lg">
               Die intelligente Software für effizienten Telefonvertrieb und Support.
