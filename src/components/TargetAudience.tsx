@@ -4,7 +4,7 @@ import { Users, Headphones, Briefcase, Globe, Phone } from 'lucide-react';
 const TargetAudience = () => {
   const audiences = [
     {
-      icon: <Phone className="h-12 w-12 text-green-400" />,
+      icon: <Phone className="h-12 w-12 text-brand-400" />,
       title: 'Sales Teams & Call Center',
       subtitle: 'Outbound & Inbound Call Center',
       description:
@@ -16,7 +16,7 @@ const TargetAudience = () => {
       ],
     },
     {
-      icon: <Headphones className="h-12 w-12 text-blue-400" />,
+      icon: <Headphones className="h-12 w-12 text-purple-400" />,
       title: 'Customer Support & Hotlines',
       subtitle: 'IT-Support und Service-Hotlines',
       description:
@@ -45,7 +45,7 @@ const TargetAudience = () => {
           {audiences.map((audience, index) => (
             <div
               key={index}
-              className="group bg-gradient-to-r from-gray-800/50 to-gray-700/50 backdrop-blur-sm p-10 rounded-xl border border-gray-600/30 hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 transform hover:scale-105 animate-fadeInUp"
+              className="group bg-gradient-to-r from-gray-800/50 to-gray-700/50 backdrop-blur-sm p-10 rounded-xl border border-gray-600/30 hover:border-brand-500/30 hover:shadow-lg hover:shadow-brand-500/10 transition-all duration-300 transform hover:scale-105 animate-fadeInUp"
               style={{ animationDelay: `${index * 200 + 400}ms` }}
             >
               <div className="flex items-start space-x-6">
@@ -53,12 +53,12 @@ const TargetAudience = () => {
                   {audience.icon}
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors duration-200">
+                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors duration-200">
                     {audience.title}
                   </h3>
                   <p
                     className={`font-medium mb-4 ${
-                      index === 0 ? 'text-green-400' : 'text-blue-400'
+                      index === 0 ? 'text-brand-400' : 'text-purple-400'
                     }`}
                   >
                     {audience.subtitle}
@@ -73,7 +73,7 @@ const TargetAudience = () => {
                         key={idx}
                         className="flex items-center text-gray-400 group-hover:text-gray-300 transition-colors duration-200"
                       >
-                        <div className="w-2 h-2 bg-green-400 rounded-full mr-3 animate-pulse"></div>
+                        <div className="w-2 h-2 bg-brand-400 rounded-full mr-3 animate-pulse"></div>
                         {benefit}
                       </li>
                     ))}

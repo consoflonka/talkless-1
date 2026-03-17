@@ -69,7 +69,7 @@ const PersonaTabs: React.FC<PersonaTabsProps> = ({ agent, manager }) => {
   const currentSlide = activeTab === 'agent' ? agentSlide : managerSlide;
 
   return (
-    <section className="py-24 bg-gradient-to-br from-dark-900 via-dark-800 to-purple-900/30 relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-dark-900 via-dark-800 to-brand-900/30 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/6 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl animate-float"></div>
@@ -152,7 +152,7 @@ const PersonaTabs: React.FC<PersonaTabsProps> = ({ agent, manager }) => {
                 <ul className="space-y-3">
                   {currentPanel.benefits.map((benefit, index) => (
                     <li key={index} className="flex items-center text-gray-200">
-                      <div className="w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                      <div className="w-6 h-6 bg-gradient-to-r from-brand-500 to-brand-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                         <CheckCircle className="w-4 h-4 text-white" />
                       </div>
                       <span className="font-medium">{benefit}</span>
@@ -256,7 +256,7 @@ const PersonaTabs: React.FC<PersonaTabsProps> = ({ agent, manager }) => {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Floating Badge */}
                 <div className="absolute -top-4 -right-4 bg-gradient-to-r from-brand-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-xl">
                   {activeTab === 'agent' ? 'Für den Alltag' : 'Für die Steuerung'}

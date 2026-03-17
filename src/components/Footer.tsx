@@ -3,11 +3,11 @@ import { Phone, Mail, MapPin, Linkedin, Twitter, ArrowRight } from 'lucide-react
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-dark-900 via-dark-800 to-purple-900/30 text-white relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-dark-900 via-dark-800 to-brand-900/30 text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, rgba(56, 189, 248, 0.3) 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 2px 2px, rgba(34, 197, 94, 0.3) 1px, transparent 0)`,
           backgroundSize: '50px 50px'
         }}></div>
       </div>
@@ -29,7 +29,7 @@ const Footer = () => {
               <span className="text-3xl font-bold">TalkLess</span>
             </div>
             <p className="text-gray-300 mb-8 max-w-md leading-relaxed text-lg">
-              Die intelligente Software für effizienten Telefonvertrieb und Support. 
+              Die intelligente Software für effizienten Telefonvertrieb und Support.
               Weniger reden, mehr erreichen.
             </p>
             <div className="flex space-x-4">
@@ -74,7 +74,7 @@ const Footer = () => {
                 <span>+49 (0) 123 456789</span>
               </div>
               <div className="group flex items-center text-gray-300 hover:text-white transition-colors duration-200">
-                <div className="w-10 h-10 bg-dark-700/50 rounded-lg flex items-center justify-center mr-3 group-hover:bg-indigo-600 transition-colors duration-200">
+                <div className="w-10 h-10 bg-dark-700/50 rounded-lg flex items-center justify-center mr-3 group-hover:bg-brand-700 transition-colors duration-200">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <span>Berlin, Deutschland</span>

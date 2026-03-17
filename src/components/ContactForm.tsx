@@ -43,7 +43,7 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
-    
+
     try {
       // API-Aufruf für Kontaktformular mit CORS-Handling
       const response = await fetch('https://n8n.srv949930.hstgr.cloud/webhook-test/f86eec14-2c9b-4b7a-b861-403e42bdaf48', {
@@ -66,7 +66,7 @@ const ContactForm = () => {
           // Kein JSON, aber Request war erfolgreich
           result = { success: true };
         }
-        
+
         // Erfolg
         setIsSubmitting(false);
         setSubmitStatus('success');
@@ -77,7 +77,7 @@ const ContactForm = () => {
           phone: '',
           message: ''
         });
-        
+
         // Reset status after 3 seconds
         setTimeout(() => {
           setSubmitStatus('idle');
@@ -85,22 +85,22 @@ const ContactForm = () => {
       } else {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      
+
     } catch (error) {
       console.error('Fehler beim Senden der Nachricht:', error);
-      
+
       // Spezifische Fehlermeldungen
       let errorMessage = 'Es gab einen Fehler beim Senden Ihrer Nachricht.';
-      
+
       if (error instanceof TypeError && error.message === 'Failed to fetch') {
         errorMessage = 'Verbindungsfehler: Bitte prüfen Sie Ihre Internetverbindung oder versuchen Sie es später erneut.';
       } else if (error instanceof Error && error.message.includes('404')) {
         errorMessage = 'Der Service ist momentan nicht verfügbar. Bitte kontaktieren Sie uns direkt per E-Mail.';
       }
-      
+
       setIsSubmitting(false);
       setSubmitStatus('error');
-      
+
       // Reset error status after 5 seconds
       setTimeout(() => {
         setSubmitStatus('idle');
@@ -112,7 +112,7 @@ const ContactForm = () => {
     <section
       ref={sectionRef}
       id="kontakt"
-      className="py-24 bg-gradient-to-br from-dark-900 via-dark-800 to-purple-900/30 relative overflow-hidden"
+      className="py-24 bg-gradient-to-br from-dark-900 via-dark-800 to-brand-900/30 relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0">
@@ -150,8 +150,8 @@ const ContactForm = () => {
                 Sprechen wir über Ihre Ziele
               </h3>
               <p className="text-gray-300 mb-10 text-lg leading-relaxed">
-                Unser Team steht bereit, um Ihnen zu zeigen, wie TalkLess Ihre 
-                Telefonkommunikation revolutionieren kann. Kostenlose Beratung 
+                Unser Team steht bereit, um Ihnen zu zeigen, wie TalkLess Ihre
+                Telefonkommunikation revolutionieren kann. Kostenlose Beratung
                 und Demo inklusive.
               </p>
 
@@ -167,7 +167,7 @@ const ContactForm = () => {
                 </div>
 
                 <div className="group flex items-center text-gray-300 hover:text-white transition-all duration-300">
-                  <div className="w-14 h-14 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className="w-14 h-14 bg-gradient-to-r from-purple-500 to-purple-700 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                     <Phone className="w-7 h-7 text-white" />
                   </div>
                   <div>
@@ -177,12 +177,12 @@ const ContactForm = () => {
                 </div>
 
                 <div className="group flex items-center text-gray-300 hover:text-white transition-all duration-300">
-                  <div className="w-14 h-14 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className="w-14 h-14 bg-gradient-to-r from-brand-600 to-brand-800 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                     <MapPin className="w-7 h-7 text-white" />
                   </div>
                   <div>
                     <p className="font-semibold text-lg">Standort</p>
-                    <p className="text-blue-400">Berlin, Deutschland</p>
+                    <p className="text-brand-400">Berlin, Deutschland</p>
                   </div>
                 </div>
               </div>
@@ -190,7 +190,7 @@ const ContactForm = () => {
               <div className="mt-10 p-6 bg-gradient-to-r from-brand-500/10 to-purple-500/10 rounded-2xl border border-brand-500/20">
                 <h4 className="font-bold text-white mb-3 text-lg">Schnelle Antwort garantiert</h4>
                 <p className="text-gray-300 text-sm">
-                  Wir antworten innerhalb von 24 Stunden auf alle Anfragen. 
+                  Wir antworten innerhalb von 24 Stunden auf alle Anfragen.
                   Für dringende Fälle rufen Sie uns direkt an.
                 </p>
               </div>

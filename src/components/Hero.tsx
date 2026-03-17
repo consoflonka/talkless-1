@@ -43,7 +43,7 @@ const Hero = () => {
     const interval = setInterval(() => {
       // Start hang-up animation
       setIsPhoneHangingUp(true);
-      
+
       // Change slogan after a short delay
       setTimeout(() => {
       setCurrentSloganIndex((prev) => (prev + 1) % slogans.length);
@@ -58,7 +58,7 @@ const Hero = () => {
     <section className="relative bg-gray-900 py-20 lg:py-28 overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-blue-900/30 to-gray-900 holographic"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-900/30 via-purple-900/30 to-gray-900 holographic"></div>
 
         {/* Floating particles */}
         <div className="floating-particles">
@@ -77,13 +77,13 @@ const Hero = () => {
         </div>
 
         {/* Morphing background blobs */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 morphing-blob animate-morph blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-500/20 morphing-blob animate-morph blur-3xl"></div>
         <div
-          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500/20 morphing-blob animate-morph blur-2xl"
+          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/20 morphing-blob animate-morph blur-2xl"
           style={{ animationDelay: '2s' }}
         ></div>
         <div
-          className="absolute top-1/2 right-1/3 w-64 h-64 bg-cyan-500/20 morphing-blob animate-morph blur-xl"
+          className="absolute top-1/2 right-1/3 w-64 h-64 bg-brand-400/20 morphing-blob animate-morph blur-xl"
           style={{ animationDelay: '4s' }}
         ></div>
 
@@ -147,7 +147,7 @@ const Hero = () => {
 
         {/* Interactive mouse follower */}
         <div
-          className="absolute w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse transition-all duration-300"
+          className="absolute w-96 h-96 bg-brand-500/20 rounded-full blur-3xl animate-pulse transition-all duration-300"
           style={{
             left: mousePosition.x / 8,
             top: mousePosition.y / 8,
@@ -160,14 +160,14 @@ const Hero = () => {
           <div className="mb-6 animate-fadeInUp">
             <div className="inline-flex items-center justify-center space-x-3 bg-gray-800/50 backdrop-blur-md border holographic-border rounded-full px-6 py-3 mb-8 hover:scale-105 transition-all duration-300 w-80">
               <div className="relative">
-                <Phone className={`h-5 w-5 text-purple-400 transition-transform duration-500 ${
+                <Phone className={`h-5 w-5 text-brand-400 transition-transform duration-500 ${
                   isPhoneHangingUp ? 'rotate-180 scale-95' : 'rotate-0 scale-100'
                 }`} />
-                <div className="absolute inset-0 bg-purple-400/30 rounded-full blur-md animate-ping"></div>
+                <div className="absolute inset-0 bg-brand-400/30 rounded-full blur-md animate-ping"></div>
               </div>
-              <span 
+              <span
                 key={currentSloganIndex}
-                className="text-purple-300 text-sm font-medium neon-text animate-fadeInUp flex items-center space-x-2"
+                className="text-brand-300 text-sm font-medium neon-text animate-fadeInUp flex items-center space-x-2"
               >
                 <span>{slogans[currentSloganIndex].text}</span>
                 {React.createElement(slogans[currentSloganIndex].icon, { className: "h-4 w-4 animate-bounce" })}
@@ -180,7 +180,7 @@ const Hero = () => {
             data-text="Talk Less, Sell More."
           >
             <span className="block mb-2">Talk Less,</span>
-            <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 to-pink-400 to-green-400 bg-clip-text text-transparent block liquid neon-text">
+            <span className="bg-gradient-to-r from-brand-300 via-brand-400 to-purple-400 bg-clip-text text-transparent block liquid neon-text">
               Sell More.
             </span>
           </h1>
@@ -205,7 +205,7 @@ const Hero = () => {
                     {Array.from({ length: 48 }).map((_, i) => (
                       <div
                         key={i}
-                        className="border border-purple-400/20 animate-pulse"
+                        className="border border-brand-400/20 animate-pulse"
                         style={{ animationDelay: `${i * 0.1}s` }}
                       ></div>
                     ))}
@@ -215,28 +215,28 @@ const Hero = () => {
                 <div className="text-center relative z-10">
                   <div className="relative mb-6">
                     <div className="relative">
-                      <Play className="h-20 w-20 text-purple-400 mx-auto group-hover:scale-125 transition-all duration-500 neon-text" />
-                      <div className="absolute inset-0 bg-purple-400/30 rounded-full blur-xl animate-ping"></div>
-                      <div className="absolute inset-0 bg-blue-400/20 rounded-full blur-2xl animate-pulse"></div>
+                      <Play className="h-20 w-20 text-brand-400 mx-auto group-hover:scale-125 transition-all duration-500 neon-text" />
+                      <div className="absolute inset-0 bg-brand-400/30 rounded-full blur-xl animate-ping"></div>
+                      <div className="absolute inset-0 bg-purple-400/20 rounded-full blur-2xl animate-pulse"></div>
                     </div>
                   </div>
                   <p className="text-white text-xl font-bold mb-2 neon-text">
                     Interactive Product Demo
                   </p>
-                  <p className="text-purple-300 text-sm">
+                  <p className="text-brand-300 text-sm">
                     Erleben Sie TalkLess in Aktion
                   </p>
                 </div>
 
                 {/* Holographic border effect */}
-                <div className="absolute inset-0 border-2 border-transparent group-hover:border-purple-500/80 rounded-xl transition-all duration-500 holographic-border"></div>
+                <div className="absolute inset-0 border-2 border-transparent group-hover:border-brand-500/80 rounded-xl transition-all duration-500 holographic-border"></div>
               </div>
             </div>
           </div>
 
           {/* Action buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12 animate-fadeInUp animation-delay-1000">
-            <button className="group relative bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-purple-500/50 liquid overflow-hidden">
+            <button className="group relative bg-gradient-to-r from-brand-600 via-brand-500 to-purple-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-brand-500/50 liquid overflow-hidden">
               <span className="relative z-10 flex items-center space-x-2">
                 <Sparkles className="h-5 w-5 group-hover:animate-spin" />
                 <span>Demo starten</span>
@@ -245,12 +245,12 @@ const Hero = () => {
               <div className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
             </button>
 
-            <button className="group relative bg-transparent border-2 border-purple-400/50 text-purple-300 px-8 py-4 rounded-xl font-bold text-lg hover:scale-110 transition-all duration-300 holographic-border hover:text-white overflow-hidden">
+            <button className="group relative bg-transparent border-2 border-brand-400/50 text-brand-300 px-8 py-4 rounded-xl font-bold text-lg hover:scale-110 transition-all duration-300 holographic-border hover:text-white overflow-hidden">
               <span className="relative z-10 flex items-center space-x-2">
                 <Phone className="h-5 w-5 group-hover:animate-bounce" />
                 <span>Kostenlos testen</span>
               </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-brand-600/20 to-purple-600/20 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom"></div>
             </button>
           </div>
 
@@ -267,7 +267,7 @@ const Hero = () => {
             </div>
             <div className="text-center group">
               <div className="holographic-border bg-gray-800/30 backdrop-blur-md rounded-xl p-6 card-3d hover:scale-105 transition-all duration-300">
-                <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent neon-text mb-2">
+                <div className="text-3xl font-bold bg-gradient-to-r from-brand-400 to-purple-400 bg-clip-text text-transparent neon-text mb-2">
                   3x
                 </div>
                 <p className="text-gray-300 text-sm font-medium mb-2">Mehr Gespräche pro Stunde</p>
@@ -276,7 +276,7 @@ const Hero = () => {
             </div>
             <div className="text-center group">
               <div className="holographic-border bg-gray-800/30 backdrop-blur-md rounded-xl p-6 card-3d hover:scale-105 transition-all duration-300">
-                <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent neon-text mb-2">
+                <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-brand-400 bg-clip-text text-transparent neon-text mb-2">
                   99%
                 </div>
                 <p className="text-gray-300 text-sm font-medium mb-2">Konsistente & compliance-sichere Kommunikation</p>
@@ -285,7 +285,7 @@ const Hero = () => {
             </div>
             <div className="text-center group">
               <div className="holographic-border bg-gray-800/30 backdrop-blur-md rounded-xl p-6 card-3d hover:scale-105 transition-all duration-300">
-                <div className="text-3xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent neon-text mb-2">
+                <div className="text-3xl font-bold bg-gradient-to-r from-green-400 to-brand-400 bg-clip-text text-transparent neon-text mb-2">
                   +25%
                 </div>
                 <p className="text-gray-300 text-sm font-medium mb-2">Höhere Conversion Rate</p>
@@ -294,7 +294,7 @@ const Hero = () => {
             </div>
             <div className="text-center group">
               <div className="holographic-border bg-gray-800/30 backdrop-blur-md rounded-xl p-6 card-3d hover:scale-105 transition-all duration-300">
-                <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent neon-text mb-2">
+                <div className="text-3xl font-bold bg-gradient-to-r from-brand-300 to-purple-300 bg-clip-text text-transparent neon-text mb-2">
                   50%
                 </div>
                 <p className="text-gray-300 text-sm font-medium mb-2">Schnelleres Onboarding neuer Teammitglieder</p>

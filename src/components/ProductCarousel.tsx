@@ -39,7 +39,7 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ slides, autoPlay = fa
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-dark-800 via-dark-900 to-purple-900/30 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-dark-800 via-dark-900 to-brand-900/30 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/6 w-64 h-64 bg-brand-500/20 rounded-full blur-3xl animate-float"></div>
@@ -61,7 +61,7 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ slides, autoPlay = fa
 
         {/* Carousel */}
         <div className="relative max-w-5xl mx-auto mb-12">
-          <div 
+          <div
             className="relative overflow-hidden rounded-3xl bg-dark-700/50 backdrop-blur-md border border-dark-600/50 shadow-2xl"
             role="region"
             aria-roledescription="carousel"
@@ -72,8 +72,8 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ slides, autoPlay = fa
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               {slides.map((slide, index) => (
-                <div 
-                  key={slide.id} 
+                <div
+                  key={slide.id}
                   className="w-full flex-shrink-0"
                   role="group"
                   aria-roledescription="slide"
@@ -95,7 +95,7 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ slides, autoPlay = fa
                           </p>
                         </div>
                       </div>
-                      
+
                       <ul className="space-y-3 mb-8">
                         {slide.bullets.map((bullet, idx) => (
                           <li key={idx} className="flex items-center text-gray-200">

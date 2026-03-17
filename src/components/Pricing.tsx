@@ -76,7 +76,7 @@ const Pricing = () => {
       cta: 'Kontakt aufnehmen',
       popular: false,
       icon: Crown,
-      gradient: 'from-purple-500 to-indigo-600',
+      gradient: 'from-purple-500 to-brand-700',
       bgGradient: 'from-purple-900/30 to-dark-700/80',
     },
   ];
@@ -85,7 +85,7 @@ const Pricing = () => {
     <section
       ref={sectionRef}
       id="pricing"
-      className="py-24 bg-gradient-to-br from-dark-800 via-dark-900 to-purple-900/30 relative overflow-hidden"
+      className="py-24 bg-gradient-to-br from-dark-800 via-dark-900 to-brand-900/30 relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0">
@@ -188,7 +188,7 @@ const Pricing = () => {
                       }`}
                       style={{ transitionDelay: `${idx * 50}ms` }}
                     >
-                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 shadow-lg">
+                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-brand-500 to-brand-600 rounded-full flex items-center justify-center mr-4 shadow-lg">
                         <Check className="w-4 h-4 text-white" />
                       </div>
                       <span className="text-gray-200 font-medium">
@@ -230,7 +230,7 @@ const Pricing = () => {
                 <p className="text-gray-400">Setup in unter 5 Minuten</p>
               </div>
               <div className="group">
-                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <div className="w-16 h-16 bg-gradient-to-r from-brand-500 to-brand-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                   <Check className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="font-bold text-white mb-2 text-lg">
@@ -239,7 +239,7 @@ const Pricing = () => {
                 <p className="text-gray-400">Monatlich kündbar</p>
               </div>
               <div className="group">
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-brand-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                   <Shield className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="font-bold text-white mb-2 text-lg">

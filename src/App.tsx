@@ -58,10 +58,10 @@ function App() {
       'Schnelleres Onboarding'
     ],
     features: [
-      { icon: <BarChart3 className="w-4 h-4 text-purple-400" />, name: 'Team Insights' },
-      { icon: <CheckCircle className="w-4 h-4 text-purple-400" />, name: 'Freigabe-Workflows' },
-      { icon: <TrendingUp className="w-4 h-4 text-purple-400" />, name: 'Performance KPIs' },
-      { icon: <Settings className="w-4 h-4 text-purple-400" />, name: 'Rollen & Rechte' }
+      { icon: <BarChart3 className="w-4 h-4 text-brand-400" />, name: 'Team Insights' },
+      { icon: <CheckCircle className="w-4 h-4 text-brand-400" />, name: 'Freigabe-Workflows' },
+      { icon: <TrendingUp className="w-4 h-4 text-brand-400" />, name: 'Performance KPIs' },
+      { icon: <Settings className="w-4 h-4 text-brand-400" />, name: 'Rollen & Rechte' }
     ],
     carousel: [
       {
