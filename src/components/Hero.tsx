@@ -214,11 +214,11 @@ const Hero = () => {
 
                 <div className="text-center relative z-10">
                   <div className="relative mb-6">
-                    <div className="relative">
-                      <Play className="h-20 w-20 text-brand-400 mx-auto group-hover:scale-125 transition-all duration-500 neon-text" />
-                      <div className="absolute inset-0 bg-brand-400/30 rounded-full blur-xl animate-ping"></div>
-                      <div className="absolute inset-0 bg-purple-400/20 rounded-full blur-2xl animate-pulse"></div>
-                    </div>
+                    <img
+                      src="/logo-stacked.png"
+                      alt="TalkLess"
+                      className="h-40 w-auto mx-auto group-hover:scale-110 transition-all duration-500 drop-shadow-2xl"
+                    />
                   </div>
                   <p className="text-white text-xl font-bold mb-2 neon-text">
                     Interactive Product Demo
